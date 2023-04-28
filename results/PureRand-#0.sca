@@ -1,0 +1,123 @@
+version 3
+run PureRand-0-20230409-16:34:12-20653
+attr configname PureRand
+attr datetime 20230409-16:34:12
+attr datetimef 20230409-163412
+attr experiment PureRand
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network LoadBalancingNetwork
+attr processid 20653
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config description "Purely Random Load Balancing"
+config **.numServers 10
+config **.selectionSize 1
+config **.meanArrivalRate 1.2
+config **.serviceRate 6
+config **.balancingMethod "\"PureRand\""
+config network LoadBalancingNetwork
+config repeat 10
+config **.server[*].totalBusyTimeSignal.record true
+config **.server[*].totalBusyTimeSignal.result-recording-modes sum
+
+par LoadBalancingNetwork.loadBalancer typename "\"LoadBalancer\""
+par LoadBalancingNetwork.loadBalancer numServers 10
+par LoadBalancingNetwork.loadBalancer maxCustomers 1000
+par LoadBalancingNetwork.loadBalancer selectionSize 1
+par LoadBalancingNetwork.loadBalancer balancingMethod "\"PureRand\""
+par LoadBalancingNetwork.server[0] typename "\"Server\""
+par LoadBalancingNetwork.server[0] serviceRate 6
+par LoadBalancingNetwork.server[0] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[0] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[0] #totalBusyTime 732.89458506094
+scalar LoadBalancingNetwork.server[0] #servedCustomer 109
+par LoadBalancingNetwork.server[1] typename "\"Server\""
+par LoadBalancingNetwork.server[1] serviceRate 6
+par LoadBalancingNetwork.server[1] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[1] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[1] #totalBusyTime 548.96039118376
+scalar LoadBalancingNetwork.server[1] #servedCustomer 94
+par LoadBalancingNetwork.server[2] typename "\"Server\""
+par LoadBalancingNetwork.server[2] serviceRate 6
+par LoadBalancingNetwork.server[2] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[2] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[2] #totalBusyTime 564.66775142949
+scalar LoadBalancingNetwork.server[2] #servedCustomer 93
+par LoadBalancingNetwork.server[3] typename "\"Server\""
+par LoadBalancingNetwork.server[3] serviceRate 6
+par LoadBalancingNetwork.server[3] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[3] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[3] #totalBusyTime 683.5881940455
+scalar LoadBalancingNetwork.server[3] #servedCustomer 107
+par LoadBalancingNetwork.server[4] typename "\"Server\""
+par LoadBalancingNetwork.server[4] serviceRate 6
+par LoadBalancingNetwork.server[4] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[4] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[4] #totalBusyTime 513.41264997829
+scalar LoadBalancingNetwork.server[4] #servedCustomer 93
+par LoadBalancingNetwork.server[5] typename "\"Server\""
+par LoadBalancingNetwork.server[5] serviceRate 6
+par LoadBalancingNetwork.server[5] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[5] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[5] #totalBusyTime 640.71060438361
+scalar LoadBalancingNetwork.server[5] #servedCustomer 117
+par LoadBalancingNetwork.server[6] typename "\"Server\""
+par LoadBalancingNetwork.server[6] serviceRate 6
+par LoadBalancingNetwork.server[6] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[6] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[6] #totalBusyTime 679.41719350032
+scalar LoadBalancingNetwork.server[6] #servedCustomer 97
+par LoadBalancingNetwork.server[7] typename "\"Server\""
+par LoadBalancingNetwork.server[7] serviceRate 6
+par LoadBalancingNetwork.server[7] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[7] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[7] #totalBusyTime 538.74913038124
+scalar LoadBalancingNetwork.server[7] #servedCustomer 88
+par LoadBalancingNetwork.server[8] typename "\"Server\""
+par LoadBalancingNetwork.server[8] serviceRate 6
+par LoadBalancingNetwork.server[8] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[8] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[8] #totalBusyTime 623.70212531724
+scalar LoadBalancingNetwork.server[8] #servedCustomer 103
+par LoadBalancingNetwork.server[9] typename "\"Server\""
+par LoadBalancingNetwork.server[9] serviceRate 6
+par LoadBalancingNetwork.server[9] queueLength 0
+attr editable ""
+par LoadBalancingNetwork.server[9] servedCustomer 0
+attr editable ""
+scalar LoadBalancingNetwork.server[9] #totalBusyTime 611.75050329027
+scalar LoadBalancingNetwork.server[9] #servedCustomer 99
+par LoadBalancingNetwork.customerGenerator typename "\"CustomerGenerator\""
+par LoadBalancingNetwork.customerGenerator meanArrivalRate 1.2
+par LoadBalancingNetwork typename "\"LoadBalancingNetwork\""
+par LoadBalancingNetwork numServers 10
+par LoadBalancingNetwork selectionSize 1
+par LoadBalancingNetwork meanArrivalRate 1.2
+par LoadBalancingNetwork serviceRate 6
+par LoadBalancingNetwork balancingMethod "\"PureRand\""
+
